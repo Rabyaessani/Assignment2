@@ -1,0 +1,154 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.ig {
+    border-radius:50px;
+    padding: 5px;
+    width: 150px;
+    float: left;
+  }
+.navbar{
+
+    display: flex;
+    background-color: black;
+    padding: 10px;
+    justify-content: space-between;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    font-size: 32px;
+    text-align: center;
+    height: 60px;
+    width:auto;
+}
+.navbar li>a{
+    text-decoration: none;
+        color:aqua;
+        font-family: Arial;
+        font-weight: bold;
+        transition: 0.4s ease-in-out;
+   
+}
+.navbar li>a:hover{
+    color: orange;
+}
+.navbar li{
+    list-style: none;
+}
+.containerr{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    background-color: antiquewhite;
+}
+.heading{
+    display:flex;
+    width:100%;
+    padding-bottom:50px;
+    /* background-color: green; */
+    text-align: right;
+    display:center;
+    padding-left:500px;
+  
+}
+.heading h2{
+    font-size:3em;
+    font-weight:bolder;
+    border-bottom:3px solid black;
+}
+.heading h2 span{
+    font-weight:100;
+
+}
+.child{
+    height:auto;
+    width:auto;
+    background-color: black;
+    padding:0px;
+    margin:50px;
+}
+/* .child:hover{
+    background-color: white;
+    transition:all 0.7s;
+
+} */
+.child img{
+    border-radius: 30% round;
+    height:200px;
+    width:auto;
+    transition: all 1s;
+
+}
+.child:hover{
+transform: scale(1.5);
+z-index:2;
+box-shadow: 3px 3px 4px grey;
+}
+
+#slider{
+    overflow:hidden;
+    margin-top:0px;
+    margin-left:200px;
+    margin-right:200px;
+    margin-bottom:200px;
+    height:500px;
+}
+#slider figure{
+    position:relative;
+    width:500%;
+    left: 0%;
+    animation:20s slider infinite;
+
+}
+#slider figure img{
+    float: left;
+    width: 20%;
+    
+}
+
+@keyframes slider{
+ 0% {
+    left:0;
+}
+20% {
+    left:0%;
+}
+25% {
+    left:-100%;
+}
+45%{
+    left:-100%;
+}
+50%{
+    left:-200%;
+}
+70%{
+    left:-200%;
+}
+75%{
+    left:-300%;
+}
+95%{
+    left:-300%;
+}
+100%{
+    left:-400%;
+}
+} 
+
+footer{
+    display: flex;
+    background-color: black;
+    padding: 10px;
+    justify-content: space-between;
+    font-size: 20px;
+   text-align: center;
+    width:100%;
+    height:auto;
+}
